@@ -10,10 +10,12 @@
 
 
   import secondPhone from './modules/secondPhone';
-
+  import menu from './modules/menu';
 
 
 
 
   //Показать/скрыть второй номер
   secondPhone();
+  //Меню
+  menu();
