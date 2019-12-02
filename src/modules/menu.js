@@ -9,11 +9,13 @@ const menu = () => {
     let target = event.target;
     if ( target.closest(`.menu`) ) {
       menu.style.transform = `translate3d(0, 0, 0)`;
-    } else if ( target.closest(`.close-menu`) || !target.closest(`.popup-dialog-menu`) ) {
-      menu.style.transform = `translate3d(645px, 0, 0)`;
+    } else if ( document.documentElement.clientWidth >= 576 && (target.closest(`.close-menu`) || !target.closest(`.popup-dialog-menu`)) ) {
+        menu.style.transform = `translate3d(645px, 0, 0)`;
+    } else if ( document.documentElement.clientWidth < 576 && (target.closest(`.close-menu`) || !target.closest(`.popup-dialog-menu`)) ) {
+      menu.style.transform = `translate3d(0, -100vh, 0)`;
     }
   });
-
+  console.log(document.documentElement.clientWidth);
 };
 
 export default menu;
