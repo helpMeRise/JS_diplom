@@ -11,6 +11,7 @@
 
   import secondPhone from './modules/secondPhone';
   import menu from './modules/menu';
+  import popups from './modules/popups';
 
 
 
@@ -19,3 +20,5 @@
   secondPhone();
   //Меню
   menu();
+  //Вспливающие окна
+  popups();

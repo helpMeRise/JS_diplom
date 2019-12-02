@@ -20,9 +20,11 @@ const menu = () => {
     let target = event.target;
     if ( target.closest(`.menu`) ) {
       menu.style.transform = `translate3d(0, 0, 0)`;
-    } else if ( document.documentElement.clientWidth >= 576 && (target.closest(`.close-menu`) || !target.closest(`.popup-dialog-menu`) || target.closest(`.popup-menu-nav__item`)) ) {
+    } else if ( document.documentElement.clientWidth >= 576 && (target.closest(`.close-menu`) || 
+          !target.closest(`.popup-dialog-menu`) || target.closest(`.popup-menu-nav__item`)) ) {
         menu.style.transform = `translate3d(645px, 0, 0)`;
-    } else if ( document.documentElement.clientWidth < 576 && (target.closest(`.close-menu`) || !target.closest(`.popup-dialog-menu`) || target.closest(`.popup-menu-nav__item`)) ) {
+    } else if ( document.documentElement.clientWidth < 576 && (target.closest(`.close-menu`) || 
+        !target.closest(`.popup-dialog-menu`) || target.closest(`.popup-menu-nav__item`)) ) {
       menu.style.transform = `translate3d(0, -100vh, 0)`;
     }
     if ( target.closest(`.button-footer`) ) {
