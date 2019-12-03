@@ -13,6 +13,7 @@ import secondPhone from './modules/secondPhone';
 import menu from './modules/menu';
 import popups from './modules/popups';
 import maskPhone from './modules/maskPhone';
+import formulaPopup from './modules/formulaPopup';
 
 
 
@@ -29,3 +30,5 @@ maskPhone(`#feedback-input2`);
 maskPhone(`#feedback-input3`);
 maskPhone(`#feedback-input4`);
 maskPhone(`#feedback-input5`);
+//Подсказки в секции преимущества
+formulaPopup();
