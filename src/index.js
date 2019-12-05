@@ -15,6 +15,7 @@ import popups from './modules/popups';
 import maskPhone from './modules/maskPhone';
 import formulaPopup from './modules/formulaPopup';
 import repairTypesSlider from './modules/repairTypesSlider';
+import portfolioSlider from './modules/portfolioSlider';
 
 
 
@@ -35,3 +36,5 @@ maskPhone(`#feedback-input5`);
 formulaPopup();
 //Слайдер в секции виды ремонта
 repairTypesSlider();
+//Слайдер в секции портфолио
+portfolioSlider();
