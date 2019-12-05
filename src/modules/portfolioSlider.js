@@ -14,7 +14,6 @@ const portfolioSlider = () => {
   mobileArrows.forEach( item => item.style.zIndex = 10);
   let current = 0;
   counterTotal[1].textContent = portfolioSliderMobile.children.length;
-  console.log('counterTotal: ', counterTotal);
   portfolio.addEventListener(`click`, (event) => {
     let target = event.target;
     if ( target.closest(`#portfolio-arrow_right`) ) {

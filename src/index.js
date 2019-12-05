@@ -16,6 +16,7 @@ import maskPhone from './modules/maskPhone';
 import formulaPopup from './modules/formulaPopup';
 import repairTypesSlider from './modules/repairTypesSlider';
 import portfolioSlider from './modules/portfolioSlider';
+import portfolioPopup from './modules/portfolioPopup';
 
 
 
@@ -38,3 +39,5 @@ formulaPopup();
 repairTypesSlider();
 //Слайдер в секции портфолио
 portfolioSlider();
+//Всплывающее окно секции портфолио
+portfolioPopup();
