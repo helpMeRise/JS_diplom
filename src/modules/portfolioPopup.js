@@ -15,21 +15,21 @@ const portfolioPopup = () => {
     countTotal.textContent = popupSlides.length;
     let target = event.target;
     frames.forEach( (item, i) => {
-      if ( target === item) {
+      if ( target === item && document.documentElement.clientWidth > 1024 ) {
         popup.style.visibility = `visible`;
         slideText[i].style.display = `block`;
         popupSlides[i].style.display = `block`;
         arrows.forEach( item => item.display = `block`);
         current = i;
         countCur.textContent = current + 1;
-      }
-      if ( target.closest(`.close`) ) {
-        popup.style.visibility = `hidden`;
-          slideText[i].style.display = `none`;
-          popupSlides[i].style.display = `none`;
-      }
-      
+      } 
+  
     });
+    if ( target.closest(`.close`) ) {
+      popup.style.visibility = `hidden`;
+      slideText[current].style.display = `none`;
+      popupSlides[current].style.display = `none`;
+    }
 
     if ( target.closest(`#popup_portfolio_left`) ) {
       slideText[current].style.display = `none`;
@@ -52,7 +52,15 @@ const portfolioPopup = () => {
     } 
     
     countCur.textContent = current + 1;
+ 
   });
-
+  popup.addEventListener(`click`, (event) => {
+    let target = event.target;
+    if ( !target.closest(`.popup-dialog-portfolio`) ) {
+      popup.style.visibility = `hidden`;
+      slideText[current].style.display = `none`;
+      popupSlides[current].style.display = `none`;
+    }
+  });
 };
 export default portfolioPopup;
