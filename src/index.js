@@ -17,6 +17,7 @@ import formulaPopup from './modules/formulaPopup';
 import repairTypesSlider from './modules/repairTypesSlider';
 import portfolioSlider from './modules/portfolioSlider';
 import portfolioPopup from './modules/portfolioPopup';
+import transparencySlider from './modules/transparencySlider';
 
 
 
@@ -41,3 +42,5 @@ repairTypesSlider();
 portfolioSlider();
 //Всплывающее окно секции портфолио
 portfolioPopup();
+//Слайдер в секции "прозрачно"
+transparencySlider();
