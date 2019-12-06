@@ -7,7 +7,8 @@ const portfolioPopup = () => {
         popupSlides = document.querySelectorAll(`.popup-portfolio-slider__slide`),
         arrows = document.querySelectorAll(`.popup-arrow`),
         countTotal = popup.querySelector(`.slider-counter-content__total`),
-        countCur = popup.querySelector(`.slider-counter-content__current`);
+        countCur = popup.querySelector(`.slider-counter-content__current`),
+        close = popup.querySelector(`.close`);
 
   let current;      
   popupSlides.forEach( item => item.style.display = `none`);
@@ -25,7 +26,7 @@ const portfolioPopup = () => {
       } 
   
     });
-    if ( target.closest(`.close`) ) {
+    if ( target.closest(`.${close.classList}`) ) {
       popup.style.visibility = `hidden`;
       slideText[current].style.display = `none`;
       popupSlides[current].style.display = `none`;
