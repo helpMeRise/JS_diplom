@@ -19,6 +19,7 @@ import portfolioSlider from './modules/portfolioSlider';
 import portfolioPopup from './modules/portfolioPopup';
 import transparencySlider from './modules/transparencySlider';
 import transparencyPopup from './modules/transparencyPopup';
+import problems from './modules/poblems';
 
 
 
@@ -47,3 +48,5 @@ portfolioPopup();
 transparencySlider();
 //Всплывающее окно в секции "прозрачно"
 transparencyPopup();
+//Секция с решаемыми проблемами
+problems();
