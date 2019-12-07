@@ -20,11 +20,11 @@ const problems = () => {
     item.addEventListener(`mouseover`, (event) => {
       item.children[1].style.opacity = 1;
       if ( i === 0 ) {
-        if ( (item.children[0].clientHeight < item.getBoundingClientRect().bottom) ) {
+        if ( (item.children[0].clientHeight > (document.documentElement.clientHeight - item.getBoundingClientRect().bottom)) ) {
           item.children[0].style.transform = `translate3d(0, -150%, 0)`;
           document.head.appendChild(style2);
           item.parentNode.style.zIndex = 1;
-        } else if ( (item.children[0].clientHeight > item.getBoundingClientRect().bottom) ) {
+        } else if ( (item.children[0].clientHeight < (document.documentElement.clientHeight - item.getBoundingClientRect().bottom)) ) {
           item.children[0].style.transform = `translate3d(0, 5px, 0)`;
           item.parentNode.style.zIndex = 1;
         }
