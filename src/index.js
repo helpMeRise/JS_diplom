@@ -20,6 +20,7 @@ import portfolioPopup from './modules/portfolioPopup';
 import transparencySlider from './modules/transparencySlider';
 import transparencyPopup from './modules/transparencyPopup';
 import problems from './modules/poblems';
+import designs from './modules/designs';
 
 
 
@@ -50,3 +51,5 @@ transparencySlider();
 transparencyPopup();
 //Секция с решаемыми проблемами
 problems();
+//Секция дизайна
+designs();
