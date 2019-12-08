@@ -23,6 +23,7 @@ import problems from './modules/poblems';
 import designs from './modules/designs';
 import advise from './modules/advise';
 import repairTypesPopup from './modules/repairTypesPopup';
+import reviews from './modules/reviews';
 
 
 
@@ -60,3 +61,5 @@ designs();
 advise();
 //Модалка видов ремонта
 repairTypesPopup();
+//Отзывы
+reviews();
