@@ -6,7 +6,7 @@ const repairTypesPopup = () => {
 
   document.body.addEventListener(`click`, (event) => {
     let target = event.target;
-    if ( target.closest(`.no-overflow`) ) {
+    if ( target.closest(`.no-overflow`) || target.closest(`.link-list-repair`) ) {
       const postData = () => fetch(`./db/db.json`); 
       postData()
         .then((response) => {
