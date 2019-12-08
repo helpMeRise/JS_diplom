@@ -11,6 +11,8 @@ const faq = () => {
     titleBlocks.forEach( (item, i) => {
       if ( target === item ) {
         item.classList.toggle(`msg-active`);
+      } else {
+        item.classList.remove(`msg-active`);
       }
     });
   });
