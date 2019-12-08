@@ -27,6 +27,7 @@ import reviews from './modules/reviews';
 import scheme from './modules/scheme';
 import faq from './modules/faq';
 import partners from './modules/partners';
+import sendForm from './modules/sendForm';
 
 
 
@@ -72,3 +73,10 @@ scheme();
 faq();
 //Секция наши партнеры
 partners();
+//Отправка форм
+sendForm(`feedback1`);
+sendForm(`feedback2`);
+sendForm(`feedback3`);
+sendForm(`feedback4`);
+sendForm(`feedback5`);
+sendForm(`feedback6`);
