@@ -21,6 +21,7 @@ import transparencySlider from './modules/transparencySlider';
 import transparencyPopup from './modules/transparencyPopup';
 import problems from './modules/poblems';
 import designs from './modules/designs';
+import advise from './modules/advise';
 
 
 
@@ -37,6 +38,7 @@ maskPhone(`#feedback-input2`);
 maskPhone(`#feedback-input3`);
 maskPhone(`#feedback-input4`);
 maskPhone(`#feedback-input5`);
+maskPhone(`#feedback-input6`);
 //Подсказки в секции преимущества
 formulaPopup();
 //Слайдер в секции виды ремонта
@@ -53,3 +55,5 @@ transparencyPopup();
 problems();
 //Секция дизайна
 designs();
+//Модалка консультации
+advise();
