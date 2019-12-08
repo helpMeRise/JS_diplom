@@ -26,6 +26,7 @@ import repairTypesPopup from './modules/repairTypesPopup';
 import reviews from './modules/reviews';
 import scheme from './modules/scheme';
 import faq from './modules/faq';
+import partners from './modules/partners';
 
 
 
@@ -69,3 +70,5 @@ reviews();
 scheme();
 //FAQ
 faq();
+//Секция наши партнеры
+partners();
