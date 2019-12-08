@@ -22,6 +22,7 @@ import transparencyPopup from './modules/transparencyPopup';
 import problems from './modules/poblems';
 import designs from './modules/designs';
 import advise from './modules/advise';
+import repairTypesPopup from './modules/repairTypesPopup';
 
 
 
@@ -57,3 +58,5 @@ problems();
 designs();
 //Модалка консультации
 advise();
+//Модалка видов ремонта
+repairTypesPopup();
