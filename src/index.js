@@ -25,6 +25,7 @@ import advise from './modules/advise';
 import repairTypesPopup from './modules/repairTypesPopup';
 import reviews from './modules/reviews';
 import scheme from './modules/scheme';
+import faq from './modules/faq';
 
 
 
@@ -66,3 +67,5 @@ repairTypesPopup();
 reviews();
 //Как мы работаем
 scheme();
+//FAQ
+faq();
