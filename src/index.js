@@ -28,6 +28,8 @@ import scheme from './modules/scheme';
 import faq from './modules/faq';
 import partners from './modules/partners';
 import sendForm from './modules/sendForm';
+import formulaSlider from './modules/formulaSlider';
+import problemsSlider from './modules/problemsSlider';
 
 
 
@@ -80,3 +82,7 @@ sendForm(`feedback3`);
 sendForm(`feedback4`);
 sendForm(`feedback5`);
 sendForm(`feedback6`);
+//Слайдер в секции формула
+formulaSlider();
+//Слайдер в секции проблем
+problemsSlider();
